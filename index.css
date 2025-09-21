@@ -5,6 +5,8 @@
 html,
 body {
   height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 body {
   margin: 0;
@@ -14,11 +16,12 @@ body {
 
 /* ===== 레이아웃 ===== */
 .viewport {
-  min-height: 100svh;
+  height: 100svh; /* ⬅️ min-height → height 로 */
+  overflow: hidden; /* ⬅️ 내부 넘침 숨김 */
   display: grid;
   grid-template-columns: 1fr min(100%, 490px) 1fr;
   gap: 32px;
-  align-items: stretch; /* 가운데(app)는 그대로, 양옆은 .side에서 중앙 정렬 */
+  align-items: stretch;
   padding: 0 clamp(16px, 4vw, 32px);
 }
 
@@ -57,7 +60,7 @@ body {
   height: auto;
 }
 .label {
-  margin: 6px 0 0;
+  margin: 12px 0 0;
   font-size: 16px;
 }
 .input-wrap {
@@ -207,6 +210,11 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #143a74;
+}
+
+/* WHEN 카드 내용 세로 중앙 */
+.info-box.list {
+  justify-content: center; /* 부모 flex의 주축(세로) 중앙 배치 */
 }
 
 /* ===== 반응형 ===== */
