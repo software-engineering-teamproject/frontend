@@ -16,8 +16,8 @@ body {
 
 /* ===== 레이아웃 ===== */
 .viewport {
-  height: 100svh; /* ⬅️ min-height → height 로 */
-  overflow: hidden; /* ⬅️ 내부 넘침 숨김 */
+  height: 100svh;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr min(100%, 490px) 1fr;
   gap: 32px;
@@ -219,7 +219,7 @@ body {
 
 /* ===== 반응형 ===== */
 /* 모바일: 좌우 패널 숨기고 가운데만 꽉 채우기 */
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
   .viewport {
     grid-template-columns: 1fr; /* 한 열 */
     gap: 0;
