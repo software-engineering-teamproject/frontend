@@ -112,12 +112,15 @@ async function trySubmit() {
   input.disabled = true;
 
   try {
-    // TODO: 실제 API 호출로 교체
-    // const res = await fetch('/api/verify-email', { ... });
-    // if (!res.ok) throw new Error();
-
+    // 실제 API 호출로 교체
     await new Promise((r) => setTimeout(r, 300)); // 데모용 지연
-    console.log('Email OK -> backend 연동 위치:', value);
+
+    // 로그인 이메일 저장 (localStorage)
+    localStorage.setItem('qai_auth_email', input.value.trim());
+
+    // TODO(백엔드 연동 후):
+    // - 서버가 토큰/세션을 내려주면 그걸 저장
+    // - 이메일은 서버 프로필 조회로 채우도록 전환
 
     location.href = 'chat.html';
   } catch (e) {

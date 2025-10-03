@@ -171,9 +171,9 @@ body {
 }
 .contact-tel {
   display: inline-block;
-  font-size: clamp(18px, 1.8vw, 22px);
+  font-size: 19px;
   color: #143a74;
-  text-decoration: underline;
+  font-weight: 500;
   text-underline-offset: 4px;
 }
 
@@ -205,8 +205,8 @@ body {
   align-items: center;
   gap: 10px;
   column-gap: 2px;
-  padding: 16px 25px;
-  padding-inline: clamp(16px, 5vw, 48px) !important;
+  padding: 16px 5px;
+  padding-inline: 20px !important;
   margin-bottom: 30px;
   margin-top: 30px;
   background: #fff;
@@ -262,7 +262,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
   color: #0f2647;
 }
@@ -275,7 +275,7 @@ body {
 }
 .q-prefix {
   font-weight: 800;
-  color: #3b6ef7;
+  color: #143a74;
 }
 .chev {
   font-size: 18px;
@@ -295,7 +295,7 @@ body {
 .a-prefix {
   margin: 0 0 6px 0;
   font-weight: 700;
-  color: #3b6ef7;
+  color: #143a74;
 }
 
 .faq[open] .chev,
@@ -372,7 +372,7 @@ details > summary {
   }
 
   .faq-top {
-    padding-inline: clamp(16px, 5vw, 48px) !important;
+    padding-inline: 20px !important;
   }
   .app-body {
     padding-bottom: 100px;
