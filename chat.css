@@ -473,3 +473,33 @@ body {
     padding-inline: clamp(16px, 5vw, 48px) !important;
   }
 }
+@media (max-width: 500px) {
+  .viewport {
+    grid-template-columns: 1fr; /* 한 열 */
+    gap: 0;
+    padding: 0;
+  }
+  .side {
+    display: none;
+  }
+  .app {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .faq-top {
+    padding-inline: clamp(16px, 5vw, 48px) !important;
+  }
+  .help-btn {
+    margin-left: 3px;
+    top: -5px;
+  }
+  .profile-btn {
+    top: 23%;
+  }
+  .composer {
+    bottom: 30px;
+  }
+  .composer-box {
+    padding: 5px 12px 5px 16px;
+  }
+}
