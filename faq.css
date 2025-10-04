@@ -409,6 +409,8 @@ details > summary {
 
   .faq-top {
     padding-inline: 20px !important;
+    margin-bottom: 12px;
+    margin-top: 15px;
   }
   .app-body {
     padding-bottom: 40px;
