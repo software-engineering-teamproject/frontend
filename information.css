@@ -172,23 +172,23 @@ body {
   display: flex;
   grid-template-columns: 25px max-content 1fr;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
   column-gap: 2px;
-  padding: 16px 25px;
+  padding: 16px 5px;
   padding-inline: 20px !important;
-  margin-bottom: 20px;
-  margin-top: 30px;
+
+  margin-top: 15px;
   background: #fff;
 }
 .faq-mascot {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: block;
   object-fit: cover;
   transform: translateY(3px);
 }
 .faq-title {
-  font-size: 39px;
+  font-size: 36px;
   line-height: 1;
   margin: 0;
   font-weight: 850;
@@ -230,14 +230,14 @@ body {
 
 /* 마스코트 & 타이틀 */
 .faq-top .faq-mascot {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   display: block;
   transform: translateY(3px);
 }
 .faq-top .faq-title {
-  font-size: 39px;
+  font-size: 36px;
   line-height: 1;
   margin: 0;
   font-weight: 850;
@@ -249,7 +249,7 @@ body {
 /* ===== 마이페이지 본문 ===== */
 .app-body {
   width: 100%;
-  padding-inline: 25px; /* 좌우여백 */
+  padding-inline: 20px; /* 좌우여백 */
   padding-bottom: 24px;
 }
 
@@ -462,5 +462,6 @@ body {
   }
   .faq-top {
     padding-inline: 20px !important;
+    margin-top: 15px;
   }
 }

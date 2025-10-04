@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!el) return;
     el.readOnly = true;
     el.setAttribute('aria-readonly', 'true');
-    if (!el.placeholder) el.placeholder = '정보를 입력하면 자동으로 입력됩니다';
+    if (!el.placeholder) el.placeholder = '정보를 입력하면 입력됩니다';
   });
 
   // 저장된 프로필 불러오기

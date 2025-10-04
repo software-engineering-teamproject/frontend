@@ -48,10 +48,10 @@ const DATA = [
   },
   {
     building: '본관',
-    dept: '입학관리팀/입학사정관실',
+    dept: '입학관리팀',
     floor: '5층',
     room: '505호',
-    tel: '031-740-7374,7325,7478',
+    tel: '031-740-7374,7325',
   },
   {
     building: '본관',
@@ -72,7 +72,7 @@ const DATA = [
     dept: '전산정보팀',
     floor: '4층',
     room: '405호',
-    tel: '031-740-7190,7263,7322',
+    tel: '031-740-7190,7263',
   }, // 확인필요
   {
     building: '본관',
@@ -120,45 +120,10 @@ const DATA = [
   // 교무지원팀 묶음(본관 1층 106호) — 표에 하위업무가 나뉘어 있어도 전화는 개별 번호로 표기되어 있음
   {
     building: '본관',
-    dept: '교무지원팀(교무·학사·인사)',
+    dept: '교무지원팀)',
     floor: '1층',
     room: '106호',
     tel: '031-740-7372',
-  },
-  {
-    building: '본관',
-    dept: '교무지원팀(수업·성적)',
-    floor: '1층',
-    room: '106호',
-    tel: '031-740-7324',
-  },
-  {
-    building: '본관',
-    dept: '교무지원팀(학적·졸업·재입학)',
-    floor: '1층',
-    room: '106호',
-    tel: '031-740-7453',
-  },
-  {
-    building: '본관',
-    dept: '교무지원팀(수업·국가고시·교원양성)',
-    floor: '1층',
-    room: '106호',
-    tel: '031-740-7313',
-  },
-  {
-    building: '본관',
-    dept: '교무지원팀(교원인사)',
-    floor: '1층',
-    room: '106호',
-    tel: '031-740-7401',
-  },
-  {
-    building: '본관',
-    dept: '교무지원팀(현장실습·교원인사)',
-    floor: '1층',
-    room: '106호',
-    tel: '031-740-7373',
   },
 
   {
@@ -362,14 +327,14 @@ const DATA = [
   },
   {
     building: '박애관',
-    dept: '빅데이터인공지능전공(의료IT)',
+    dept: '의료IT',
     floor: '5층',
     room: '505호',
     tel: '031-740-7435,7198',
   },
   {
     building: '박애관',
-    dept: '빅데이터인공지능전공(빅데이터융합)',
+    dept: '빅데이터융합',
     floor: '5층',
     room: '502호',
     tel: '031-740-7567',
@@ -675,7 +640,7 @@ function render(rows, query = '') {
       <div class="dir-body">
         <table class="dir-table" role="table">
           <thead>
-            <tr><th>부서·학과</th><th class="floor">층</th><th class="room">호수</th><th class="tel">전화</th></tr>
+            <tr><th>부서·학과</th><th class="room">호수</th><th class="tel">전화</th></tr>
           </thead>
           <tbody></tbody>
         </table>
@@ -689,7 +654,6 @@ function render(rows, query = '') {
         const tr = document.createElement('tr');
         tr.innerHTML = `
         <td class="dept">${highlight(it.dept, query)}</td>
-        <td class="floor">${highlight(it.floor, query)}</td>
         <td class="room">${highlight(it.room, query)}</td>
         <td class="tel"><a href="tel:${digits(
           it.tel

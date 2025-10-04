@@ -302,7 +302,7 @@ function render(rows, query = '') {
       <div class="dir-body">
         <table class="dir-table" role="table">
           <thead>
-            <tr><th>부서·학과</th><th class="floor">층</th><th class="room">호수</th><th class="tel">전화</th></tr>
+            <tr><th>부서·학과</th><th class="room">호수</th><th class="tel">전화</th></tr>
           </thead>
           <tbody></tbody>
         </table>
@@ -313,7 +313,6 @@ function render(rows, query = '') {
         const tr = document.createElement('tr');
         tr.innerHTML = `
         <td class="dept">${highlight(it.dept, query)}</td>
-        <td class="floor">${highlight(it.floor, query)}</td>
         <td class="room">${highlight(it.room, query)}</td>
         <td class="tel"><a href="tel:${digits(
           it.tel

@@ -173,19 +173,19 @@ body {
   display: flex;
   grid-template-columns: 25px max-content 1fr;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
   column-gap: 2px;
-  padding: 16px clamp(16px, 5vw, 48px);
+  padding: 16px 5px;
   padding-inline: 20px !important;
-  margin: 30px 0 10px;
+  margin: 15px 0 12px;
   background: #fff;
   align-self: stretch;
   width: 100%;
 }
 
 .faq-mascot {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: block;
   object-fit: cover;
   transform: translateY(3px);
@@ -219,8 +219,8 @@ body {
 
 /* 마스코트 & 타이틀 */
 .faq-top .faq-mascot {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   display: block;
   transform: translateY(3px);
@@ -248,7 +248,7 @@ body {
   background: #ffffff;
   border: none;
   border-radius: 16px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 /* 폼 레이아웃 */
@@ -256,10 +256,10 @@ body {
   background: #f7f9fe;
   border: 1px solid #e7ecf6;
   border-radius: 12px;
-  padding-top: 16px;
+  padding-top: 12px;
   padding-left: 16px;
   padding-right: 16px;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 .info-form .row {
@@ -272,21 +272,23 @@ body {
 
 .info-form label {
   font-weight: 550;
-  font-size: 19px;
+  font-size: 18px;
   color: #173765;
   letter-spacing: -0.2px;
   text-align: left;
-  padding-left: 5px;
+  padding-left: 3px;
 }
 
 .info-form input {
   height: 45px;
   border: 1.5px solid #cdd9f0;
   border-radius: 8px;
-  padding: 0 5%;
+  margin-right: 3px;
+  padding-left: 5px;
   background: #f9fbff;
   color: #0f2647;
   font-size: 18px;
+  width: 100%;
 }
 .info-form input::placeholder {
   color: #697487;
@@ -319,7 +321,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
-  margin-top: 16px;
+  margin-top: -30px;
 }
 
 .action-btn {
@@ -331,8 +333,8 @@ body {
   background: #f7f9fe;
   border: 1px solid #e7ecf6;
   border-radius: 16px;
-  margin-top: 60px;
-  padding: 18px 10px;
+  margin-top: 75px;
+  padding: 13px 10px;
   text-decoration: none;
   color: #143a74;
   font-weight: 600;
@@ -367,6 +369,6 @@ body {
     padding-inline: 20px !important;
   }
   .info-form .row {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
 }

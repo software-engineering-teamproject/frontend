@@ -41,7 +41,7 @@ body {
 .app > .search-wrap {
   position: static; /* sticky 안 씀 (faq-top 아래 고정) */
   flex: 0 0 auto; /* 높이만 차지 */
-  padding: 12px 25px 16px; /* 좌우 여백을 .app-body와 맞춤 */
+  padding: 12px 15px 16px; /* 좌우 여백을 .app-body와 맞춤 */
   background: #fff;
   border-bottom: 1px solid #eef3ff; /* 선택: 구분선 */
 }
@@ -179,26 +179,25 @@ body {
   display: flex;
   grid-template-columns: 25px max-content 1fr;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
   column-gap: 2px;
-  padding: 16px 25px;
+  padding: 16px 5px;
   padding-inline: 20px !important;
-  margin-bottom: 12px;
-  margin-top: 30px;
+  margin-top: 15px;
   background: #fff;
   align-self: stretch;
   width: 100%;
 }
 
 .faq-mascot {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: block;
   object-fit: cover;
   transform: translateY(3px);
 }
 .faq-title {
-  font-size: 39px;
+  font-size: 36px;
   line-height: 1;
   margin: 0;
   font-weight: 850;
@@ -226,14 +225,14 @@ body {
 
 /* 마스코트 & 타이틀 */
 .faq-top .faq-mascot {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   display: block;
   transform: translateY(3px);
 }
 .faq-top .faq-title {
-  font-size: 39px;
+  font-size: 36px;
   line-height: 1;
   margin: 0;
   font-weight: 850;
@@ -245,7 +244,7 @@ body {
 /* ===== 마이페이지 본문 ===== */
 .app-body {
   width: 100%;
-  padding-inline: 25px; /* 좌우여백 */
+  padding-inline: 15px; /* 좌우여백 */
   margin-bottom: 60px;
   margin-top: 15px;
   flex: 1 1 auto;
@@ -454,7 +453,7 @@ body {
   top: 0; /* 헤더 바로 아래 고정 */
   z-index: 4;
   background: #fff;
-  padding: 8px 25px 18px;
+  padding: 0px 25px 18px;
 }
 .search-input {
   width: 100%;
@@ -624,5 +623,6 @@ mark.hit {
   }
   .faq-top {
     padding-inline: 20px !important;
+    margin-top: 15px;
   }
 }
