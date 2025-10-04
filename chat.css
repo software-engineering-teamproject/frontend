@@ -490,16 +490,16 @@ body {
     padding-inline: clamp(16px, 5vw, 48px) !important;
   }
   .help-btn {
-    margin-left: 3px;
-    top: -5px;
+    margin-left: 3px !important;
+    top: -5px !important;
   }
   .profile-btn {
-    top: 23%;
+    top: 23% !important;
   }
   .composer {
-    bottom: 30px;
+    bottom: 30px !important;
   }
   .composer-box {
-    padding: 5px 12px 5px 16px;
+    padding: 5px 12px 5px 16px !important;
   }
 }
